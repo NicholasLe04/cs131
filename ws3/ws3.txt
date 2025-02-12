@@ -1,0 +1,19 @@
+Task 1: Sort the pickup location IDs in order to find the most popular pickup locations on January 2nd, 2019. Identify the top 3 locations.
+
+Command used: grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3
+
+Output (frequency and pickup location ids): 
+   8605 161.0
+   8407 132.0
+   8163 186.0
+
+----------
+
+Task 2: Sort the pickup location IDs in order to find the most popular pickup locations on January 10th, 2019. Identify the top 3 locations.
+  
+Command used: grep '2019-01-10' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3
+
+Output (frequency and pickup location ids):
+  13738 237.0
+  13519 236.0
+  12997 161.0

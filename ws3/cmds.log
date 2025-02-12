@@ -1,0 +1,256 @@
+    1  ls
+    2  clear
+    3  ls
+    4  clear
+    5  info
+    6  clear
+    7  git status
+    8  git --version
+    9  ls
+   10  mkdir cs131
+   11  ls
+   12  cd cs131/
+   13  ls
+   14  clear
+   15  git config
+   16  git config --global
+   17  git config --global user.email "nicholasl.le224@gmail.com"
+   18  git config --global user.name "NicholasLe04"
+   19  git status
+   20  ls
+   21  cd cs131
+   22  ls
+   23  ls -a
+   24  clear
+   25  git status
+   26  cd ..
+   27  rm cs131
+   28  ls
+   29  rmdir cs131/
+   30  ls
+   31  clear
+   32  git clone https://github.com/nicholasle04/cs131
+   33  ls
+   34  cd cs131/
+   35  ls
+   36  file README.md 
+   37  man ls
+   38  man cat
+   39  clear
+   40  cd cs131/
+   41  clear
+   42  ls
+   43  cat README.md 
+   44  cd sample1/
+   45  ls
+   46  vim data.txt
+   47  clear
+   48  ls
+   49  clear
+   50  vim data.txt
+   51  clear
+   52  ls
+   53  cat sort data.txt 
+   54  sort data.txt 
+   55  vim data.txt 
+   56  clear
+   57  sort data.txt 
+   58  uniq data.txt 
+   59  uniq < sort data.txt 
+   60  uniq | sort data.txt 
+   61  clear
+   62  uniq data.txt 
+   63  data.t
+   64  vim data.txt 
+   65  uniq data.txt 
+   66  sort data.txt > uniq
+   67  ls
+   68  rm uniq 
+   69  sort data.txt | uniq
+   70  clear
+   71  sort data.txt > sorted_data.txt
+   72  ls
+   73  cat sorted_data.txt 
+   74  ls > sorted_data.txt 
+   75  ls
+   76  cat sorted_data.txt 
+   77  sort data.txt >> sorted_data.txt 
+   78  cat sorted_data.txt 
+   79  clear
+   80  ls
+   81  clear
+   82  mkdir temp
+   83  ls
+   84  cd temp/
+   85  cd ..
+   86  rmdir temp/
+   87  ls
+   88  cat alsdfjsd; 2> error.txt
+   89  ls error.txt 
+   90  cat error.txt 
+   91  cat lfghjljlskjg 2> error.txt 
+   92  ls error.txt 
+   93  cat error.txt 
+   94  clear
+   95  ls
+   96  clear
+   97  ls /dev
+   98  ls /dev/null
+   99  ls /bin//usr
+  100  ls /bin/usr
+  101  ls -l /bin/usr
+  102  ls /bin
+  103  ls /bin 2> /dev/null
+  104  ls /bin > /dev/null
+  105  clear
+  106  ls
+  107  cat
+  108  cat > test.txt
+  109  cat test.txt 
+  110  rm test.txt 
+  111  ;s
+  112  ls
+  113  clear
+  114  cat 0> test.txt
+  115  sort data.txt | uniq | wc
+  116  man wc
+  117  sort data.txt | uniq | wc --w
+  118  history | grep uniq
+  119  sort data.txt | uniq -c
+  120  history | grep i
+  121  clear
+  122  info
+  123  clear
+  124  info > test.txt
+  125  cat test.txt 
+  126  rm test.txt 
+  127  ls
+  128  clear
+  129  ls
+  130  cat error.txt 
+  131  git log
+  132  git status
+  133  cd ..
+  134  git status
+  135  clear
+  136  git log --pretty
+  137  git log --pretty=format:'%h &ad %s' --graph
+  138  git log --pretty=format:'%h %ad %s' --graph
+  139  vim ~/.gitconfig 
+  140  git log
+  141  clear
+  142  vim ~/.gitconfig 
+  143  git log
+  144  vim ~/.gitconfig 
+  145  hist
+  146  clear
+  147  git hist
+  148  source ~/.gitconfig 
+  149  clear
+  150  git hist
+  151  vim ~/.gitconfig 
+  152  hist
+  153  source ~/.gitconfig 
+  154  hist
+  155  clear
+  156  git hist
+  157  man source
+  158  souce
+  159  source
+  160  clear
+  161  vim README.md 
+  162  cat README.md 
+  163  clear
+  164  git status
+  165  git add README.md 
+  166  git commit -m "edit README"
+  167  git hist
+  168  git checkout 24f1fe0
+  169  ls
+  170  cat README.md 
+  171  git checkout 618ec55
+  172  ls
+  173  cat README.md 
+  174  git hist
+  175  cd cs131/
+  176  ls
+  177  clear
+  178  git hist
+  179  clear
+  180  mkdir ws2
+  181  cd ws2/
+  182  echo ~
+  183  echo ~nicholas_l_le
+  184  id
+  185  ls /proc | grep mem
+  186  ls /proc | grep cpu
+  187  head /proc/meminfo 
+  188  head /proc/cpuinfo 
+  189  tail /proc/cpuinfo 
+  190  cat /proc/cpuinfo 
+  191  cat /etc/os-release 
+  192  echo ~ >> ws2.txt
+  193  id >> ws2.txt 
+  194  ls /proc | grep mem >> ws2.txt 
+  195  ls /proc | grep cpu >> ws2.txt 
+  196  head /proc/meminfo >> ws.txt
+  197  head /proc/meminfo >> ws2.txt
+  198  ls
+  199  rm ws.txt 
+  200  head /proc/cpuinfo >> ws2.txt 
+  201  tail /proc/cpuinfo >> ws2.txt 
+  202  cat /proc/cpuinfo >> ws2.txt 
+  203  cat /etc/os-release >> ws2.txt 
+  204  vim ws2.txt 
+  205  lscpu
+  206  vim ws2.txt 
+  207  apt install python3-pip
+  208  sudo apt install python3-pip
+  209  sudo apt update
+  210  sudo apt install python3-pip
+  211  pip install down
+  212  clear
+  213  cd cs131/
+  214  clear
+  215  pip install gdown
+  216  clear
+  217  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  218  pip install gdown
+  219  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  220  ls /home/nicholas_l_le/.local/bin/
+  221  /home/<user-name>/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  222  /home/nicholas_l_le/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  223  ls
+  224  head 2019-01-h1.csv 
+  225  grep '2019-01-02' 2019-01-h1.csv 
+  226  clear
+  227  grep '2019-01-02' 2019-01-h1.csv | head
+  228  grep '2019-01-02' 2019-01-h1.csv | head - 3
+  229  grep '2019-01-02' 2019-01-h1.csv | head -3
+  230  grep '2019-01-02' 2019-01-h1.csv | sort | head -3
+  231  man cut
+  232  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort | head - 3
+  233  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort | head -3
+  234  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort uniq -c | sort -nr | head -3
+  235  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -nr | head -3
+  236  head -2 2019-01-h1.csv 
+  237  head -2 2019-01-h1.csv | cut -d',' -f8
+  238  head -2 2019-01-h1.csv | cut -d',' -f9
+  239  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c 
+  240  man sort
+  241  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r
+  242  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3
+  243  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | cut -d' ' -f1 head -3
+  244  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | cut -d' ' -f1 | head -3
+  245  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | cut -d' ' -f2 | head -3
+  246  man sort
+  247  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | cut -d' ' -f2 | head -3
+  248  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3
+  257  grep '2019-01-02' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3 > ws3.txt
+  259  cat ws3.txt 
+  260  vim ws3.txt 
+  261  grep '2019-01-10' 2019-01-h1.csv | cut -d',' -f8 | sort |  uniq -c | sort -n -r | head -3 >> ws3.txt
+  262  vim ws3.txt 
+  263  ls
+  264  cat ws3.txt 
+  265  history > cmds.log
