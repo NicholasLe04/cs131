@@ -1,0 +1,68 @@
+a1 setup
+---------------
+  232  cd cs131/
+  233  git status
+  234  clear
+  235  ls
+  236  mkdir a1
+  237  clear
+task 1
+---------------
+  238  vim ~/.bashrc
+  239  l
+  240  w
+  241  vim ~/.bashrc
+task 2
+---------------
+2a)
+  266  mkdir FARE
+  267  cd FARE
+  268  cp ../../ws3/2019-01-h1.csv ./
+  269  ls
+2b)
+  270  grep "48.0,161.0" 2019-01-h1.csv | cut -d, | head
+  271  grep "48.0,161.0" 2019-01-h1.csv | cut -d ',' | head
+  272  grep "48.0,161.0" 2019-01-h1.csv | cut -d, -f11 | head
+  273  grep "48.0,161.0" 2019-01-h1.csv | cut -d, -f11 > "48.0-161.0.txt"
+  274  grep "49.0,162.0" 2019-01-h1.csv | cut -d, -f11 > "49.0-162.0.txt"
+  275  man bc
+  276  man paste
+  282  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(wc -l 48.0-161.0.txt)" | bc
+  283  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(wc -l 48.0-161.0.txt)" | bc >> a1.txt
+  284  cat a1.txt 
+  285  ls
+  288  head a1.txt
+  289  l >> a1.txt 
+  291  w >> a1.txt
+  294  cat a1.txt
+2c) 
+  298  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(cat 48.0-161.0.txt | wc -l)"
+  299  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(cat 48.0-161.0.txt | wc -l)" | bc
+  300  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(cat 48.0-161.0.txt | wc -l)" | bc -l
+  301  echo "$(paste -sd+ 48.0-161.0.txt | bc) / $(cat 48.0-161.0.txt | wc -l)" | bc -l >> a1.txt 
+  302  cat a1.txt 
+  303  echo "$(paste -sd+ 49.0-162.0.txt | bc) / $(cat 49.0-162.0.txt | wc -l)" | bc -l >> a1.txt 
+  304  cat a1.txt 
+  305  cat sort
+  306  man sort
+2d)
+  307  grep '2019-01-10' 2019-01-h1.csv | tail
+  308  grep '2019-01-10' 2019-01-h1.csv | sort -t, | head
+  313  grep '2019-01-10' 2019-01-h1.csv | sort -t, -k17 -n | tail -n 1 | cut -d, -f17
+  314  grep '2019-01-10' 2019-01-h1.csv | sort -t, -k17 -n | tail -n 1 | cut -d, -f17 >> a1.txt
+2e)
+  315  cat 2019-01-h1.csv | grep ',[3-9]' | head
+  316  cat 2019-01-h1.csv | grep '^[^,]+,[^,]+,[^,]+,[3-9]' | head
+  317  cat 2019-01-h1.csv | grep '^[^,]+,[^,]+,[^,]+,[3-9],*' | head
+  320  cat 2019-01-h1.csv | grep -E '^[^,]+,[^,]+,[^,]+,[3-9]\d' | head
+  332  man sort
+  333  grep -E '^[^,]+,[^,]+,[^,]+,[3-9]|\d' 2019-01-h1.csv | cut -d, -f9 | head
+  334  grep -E '^[^,]+,[^,]+,[^,]+,[3-9]|\d' 2019-01-h1.csv | cut -d, -f9 | sort | head
+  335  man sort
+  336  grep -E '^[^,]+,[^,]+,[^,]+,[3-9]|\d' 2019-01-h1.csv | cut -d, -f9 | sort | uniq -c | sort -n | tail
+  337  echo grep -E '^[^,]+,[^,]+,[^,]+,[3-9]|\d' 2019-01-h1.csv | cut -d, -f9 | sort | uniq -c | sort -n | tail
+  338  grep -E '^[^,]+,[^,]+,[^,]+,[3-9]|\d' 2019-01-h1.csv | cut -d, -f9 | sort | uniq -c | sort -n | tail >> a1.txt
+  339  cat a1.txt 
+  340  vim a1.txt 
+  341  ls
+  342  history > cmd.log

@@ -1,0 +1,29 @@
+task 1
+---
+output of "l" (run after more files were created):
+2019-01-h1.csv	48.0-161.0.txt	49.0-162.0.txt	a1.txt
+
+output of "w" (run after more file were created):
+       6      47     387
+
+task 2
+---
+mean of fare amounts at pu-do 48.0-161.0:
+7.57693472663940633045
+mean of fare amounts at pu-do 49.0-162.0:
+13.05588167053364269141
+
+highest total amount paid by a customer on January 10,2019:
+36090.3
+
+the frequency and dropoff location ids of the 10 more popular locations with 3+ customers:
+  12194 141.0
+  12852 239.0
+  13472 142.0
+  13902 162.0
+  13964 48.0
+  14324 170.0
+  16556 230.0
+  16686 237.0
+  18013 161.0
+  19897 236.0
