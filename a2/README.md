@@ -55,13 +55,13 @@ $ tree
 2 directories, 9 files
 
 $ ./organize.sh test ext
-test/test_file -> misc
-test/test_file.mp3 -> audios
-test/test_file.mp4 -> videos
-test/test_file.pdf -> documents
-test/test_file.png -> images
-test/test_file.txt -> documents
-test/test_file.zip -> archives
+/home/nicholas_l_le/cs131/a2/test/test_file -> misc
+/home/nicholas_l_le/cs131/a2/test/test_file.mp3 -> audios
+/home/nicholas_l_le/cs131/a2/test/test_file.mp4 -> videos
+/home/nicholas_l_le/cs131/a2/test/test_file.pdf -> documents
+/home/nicholas_l_le/cs131/a2/test/test_file.png -> images
+/home/nicholas_l_le/cs131/a2/test/test_file.txt -> documents
+/home/nicholas_l_le/cs131/a2/test/test_file.zip -> archives
 Files organized successfully.
 
 $ tree                  
@@ -83,6 +83,62 @@ $ tree
     └── videos
         └── test_file.mp4
 8 directories, 9 files
+```
+
+Example 2: Organize a directory by file date
+```bash
+$ tree
+.
+├── README.md
+├── organize.sh
+└── test
+    ├── month_test.txt
+    └── yesterday_test.txt
+1 directory, 4 files
+
+$ ./organize.sh test date
+/home/nicholas_l_le/cs131/a2/test/month_test.txt -> this_month
+/home/nicholas_l_le/cs131/a2/test/yesterday_test.txt -> this_week
+Files organized successfully.
+
+$ tree
+.
+├── README.md
+├── organize.sh
+└── test
+    ├── this_month
+    │   └── month_test.txt
+    └── this_week
+        └── yesterday_test.txt
+3 directories, 4 files
+```
+
+Example 3: Organize a directory by file size
+```bash
+$ tree
+.
+├── README.md
+├── organize.sh
+└── test
+    ├── 1mb_test.txt
+    └── 20mb_test.txt
+1 directory, 4 files
+
+$ ./organize.sh test size
+/home/nicholas_l_le/cs131/a2/test/1mb_test.txt -> medium
+/home/nicholas_l_le/cs131/a2/test/20mb_test.txt -> large
+Files organized successfully.
+
+$ tree
+.
+├── README.md
+├── organize.sh
+└── test
+    ├── large
+    │   └── 20mb_test.txt
+    └── medium
+        └── 1mb_test.txt
+3 directories, 4 files
 ```
 
 ## Notes
