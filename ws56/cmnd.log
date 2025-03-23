@@ -1,0 +1,37 @@
+  355  mkdir ws56
+  356  cd ws56
+  357  clear
+  358  ls
+  359  clear
+
+  360  grep -E "^2.0,.*" ../2019-01-h1.csv > vendor2.csv
+  361  head vendor2.csv 
+  362  wc vendor2.csv >> ws56.txt
+
+  363  sed 's/[:\"-]//g' ../2019-01-h1.csv > no-separators.csv
+  364  head -10 no-separators.csv >> ws56.txt 
+  365  cat ws56.txt 
+
+  366  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+  367  head -10 no-fractions.csv >> ws56.txt 
+  368  cat ws56.txt 
+  369  man awk
+
+  370  awk -F',' '$11 >= 10 print $11' no-separators.csv 
+  371  awk -F',' '$11 >= 10 {print $11}' no-separators.csv 
+  372  clear
+  373  awk -F',' '$11 >= 10 {print $11}' no-separators.csv | head
+  374  cat ws56.txt 
+  376  awk -F',' '$11 >= 10 {tip_count[$14]++} END {for (tip in tip_count) print tip, tip_count[tip]}' ../2019-01-h1.csv | head
+  377  awk -F',' '$11 >= 10 {tip_count[$14]++} END {for (tip in tip_count) print tip, tip_count[tip]}' ../2019-01-h1.csv >> ws56.txt 
+  378  cat ws56.txt 
+
+  379  cut -d',' -f14 ../2019-01-h1.csv | head
+  380  cut -d',' -f14 ../2019-01-h1.csv | sort | head
+  381  sort -t',' -k14,14 ../2019-01-h1.csv | head
+  382  awk -F',' '{tip_count[$14]++} END {for (tip in tip_count) print tip, tip_count[tip]}' ../2019-01-h1.csv | sort -k2,2nr | head -20
+  383  awk -F',' '{tip_count[$14]++} END {for (tip in tip_count) print tip, tip_count[tip]}' ../2019-01-h1.csv | sort -k2,2nr | head -20 >> ws56.txt 
+  384  cat ws56.txt 
+  386  vim ws56.txt 
+  387  history > cmnd.log
+  388  vim cmnd.log 
