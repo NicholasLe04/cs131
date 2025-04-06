@@ -1,0 +1,15 @@
+  357  mkdir a3
+  358  cd a3
+  359  clear
+  360  touch grades.csv
+  364  vim grades.csv 
+  365  ls
+  372  touch grader.awk
+  373  vim grader.awk 
+  377  awk -f grader.awk grades.csv 
+  378  vim grader.awk 
+  380  vim grader.awk 
+  385  awk -f grader.awk grades.csv 
+  386  awk -f grader.awk grades.csv > a3.txt
+  387  clear
+  388  history > cmnd.log
